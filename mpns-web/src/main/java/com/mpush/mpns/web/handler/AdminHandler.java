@@ -9,6 +9,8 @@ import io.vertx.core.eventbus.Message;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
@@ -20,6 +22,7 @@ import javax.annotation.Resource;
  */
 @Controller
 public class AdminHandler extends BaseHandler {
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Resource
     private PushService pushService;
@@ -34,6 +37,7 @@ public class AdminHandler extends BaseHandler {
 
     @Override
     protected void initRouter(Router router) {
+        logger.info("initRouter");
         router("/push", this::sendPush);
         router("/list/servers", this::listMPushServers);
         router("/get/onlineUserNum", this::getOnlineUserNum);

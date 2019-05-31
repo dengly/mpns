@@ -2,6 +2,7 @@ package com.mpush.mpns.web;
 
 import com.mpush.mpns.web.common.AccessLogHandler;
 import com.mpush.mpns.web.common.ApiErrorHandler;
+import com.mpush.mpns.web.handler.AdminHandler;
 import com.sun.management.OperatingSystemMXBean;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Context;
@@ -79,7 +80,7 @@ public class AppServer extends AbstractVerticle {
         int port = config.getInteger("http.server.port", 8080);
         server = vertx.createHttpServer();
         server.requestHandler(mainRouter::accept).listen(port);
-        logger.error("app server start success listen " + port);
+        logger.info("app server start success listen " + port);
     }
 
     private void initWebSocket() {
@@ -88,8 +89,10 @@ public class AppServer extends AbstractVerticle {
                 .setHeartbeatInterval(1000 * 60);
         SockJSHandler sockJSHandler = SockJSHandler.create(vertx, options);
 
-        PermittedOptions inboundPermitted = new PermittedOptions().setAddressRegex("server/.*");
-        PermittedOptions outboundPermitted = new PermittedOptions().setAddressRegex("client/.*");
+        PermittedOptions inboundPermitted = new PermittedOptions();
+        inboundPermitted.setAddressRegex("server/.*");
+        PermittedOptions outboundPermitted = new PermittedOptions();
+        outboundPermitted.setAddressRegex("client/.*");
 
         BridgeOptions ops = new BridgeOptions()
                 .addInboundPermitted(inboundPermitted)
