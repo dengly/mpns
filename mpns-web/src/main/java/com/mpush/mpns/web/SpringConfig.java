@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
+/**
+ * spring配置
+ */
 @Configuration
 @ImportResource("classpath:spring-core.xml")
 public class SpringConfig {

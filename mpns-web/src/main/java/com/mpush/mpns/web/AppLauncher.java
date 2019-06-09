@@ -17,6 +17,8 @@ import static io.vertx.core.logging.LoggerFactory.LOGGER_DELEGATE_FACTORY_CLASS_
 /**
  * Created by yxx on 2016/5/5.
  *
+ * app启动器
+ *
  * @author ohun@live.cn
  */
 public class AppLauncher extends Launcher {

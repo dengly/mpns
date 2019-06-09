@@ -22,6 +22,8 @@ package com.mpush.mpns.web.common;
 /**
  * Created by ohun on 16/9/15.
  *
+ * api异常
+ *
  * @author ohun@live.cn (夜色)
  */
 public class ApiException extends RuntimeException {

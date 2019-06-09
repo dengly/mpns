@@ -5,6 +5,8 @@ import io.vertx.core.http.HttpServerRequest;
 /**
  * Created by yxx on 2016/5/11.
  *
+ * 请求
+ *
  * @author ohun@live.cn
  */
 public final class Requests {

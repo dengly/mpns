@@ -10,6 +10,8 @@ import org.springframework.context.i18n.LocaleContextHolder;
 /**
  * Created by yxx on 2016/5/6.
  *
+ * api错误处理器
+ *
  * @author ohun@live.cn
  */
 public class ApiErrorHandler implements Handler<RoutingContext> {

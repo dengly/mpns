@@ -25,6 +25,8 @@ import io.vertx.core.json.JsonObject;
 /**
  * Created by ohun on 16/9/15.
  *
+ * api结果
+ *
  * @author ohun@live.cn (夜色)
  */
 public class ApiResult<T> {

@@ -34,6 +34,8 @@ import java.util.Collection;
 /**
  * Created by ohun on 16/9/20.
  *
+ * MPush管理器
+ *
  * @author ohun@live.cn (夜色)
  */
 @Service

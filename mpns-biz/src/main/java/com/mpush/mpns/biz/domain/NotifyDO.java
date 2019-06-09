@@ -24,6 +24,8 @@ import java.util.Map;
 /**
  * Created by ohun on 16/9/20.
  *
+ * 通知
+ *
  * @author ohun@live.cn (夜色)
  */
 public class NotifyDO {

@@ -10,6 +10,8 @@ import java.util.Locale;
 /**
  * Created by yxx on 2016/5/12.
  *
+ * 语言环境分析处理器
+ *
  * @author ohun@live.cn
  */
 public class LocaleResolveHandler implements Handler<RoutingContext> {

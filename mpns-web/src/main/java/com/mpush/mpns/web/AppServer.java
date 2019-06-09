@@ -29,6 +29,8 @@ import static java.util.concurrent.TimeUnit.MINUTES;
 /**
  * Created by yxx on 2016/4/22.
  *
+ * app服务器
+ *
  * @author ohun@live.cn
  */
 public class AppServer extends AbstractVerticle {

@@ -22,6 +22,8 @@ package com.mpush.mpns.biz.pusher;
 /**
  * Created by ohun on 16/9/15.
  *
+ * 推送生产者
+ *
  * @author ohun@live.cn (夜色)
  */
 public interface PushProvider {

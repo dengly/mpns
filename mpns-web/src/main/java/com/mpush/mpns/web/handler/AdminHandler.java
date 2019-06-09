@@ -18,6 +18,8 @@ import javax.annotation.Resource;
 /**
  * Created by yxx on 2016/4/26.
  *
+ * 管理员处理器
+ *
  * @author ohun@live.cn
  */
 @Controller

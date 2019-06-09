@@ -15,6 +15,8 @@ import javax.annotation.Resource;
 /**
  * Created by yxx on 2016/4/26.
  *
+ * 基础处理器
+ *
  * @author ohun@live.cn
  */
 public abstract class BaseHandler {

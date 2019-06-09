@@ -38,6 +38,8 @@ import java.util.concurrent.atomic.AtomicLong;
 /**
  * Created by ohun on 16/9/15.
  *
+ * 推送服务
+ *
  * @author ohun@live.cn (夜色)
  */
 @Service
